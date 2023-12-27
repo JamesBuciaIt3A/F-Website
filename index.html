@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="banner">
+            <div class="banner">
+                <div class="navbar">
+                    <img src="images/logo1.png" class="logo1">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <h1>Personal Portfolio Website</h1>
+                    Hi!, Welcome to my Personal Website, Thank you for visiting of my website 
+                    <br>Explore and have a look about of my personality and lifestyle</p>
+                        <div>
+                            <a href="contact.html">
+                        <button type="button"><span></span>More Info</a></button>
+                            </a>
+                        </div>
+
+                    
+                </div>
+            </div>
+
+            <!--About-->
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/pictureme1.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h2 class="sub-title">About Me</h2>
+                            <h1 class="sub-title1">Hi! I'm James Warren Bucia</h1>
+                            <p>Hello, everyone! My name is James Warren Bucia, from Malayo Norte, Cortes Bohol,
+                                <br>Students from Bohol Island State University Balilihan Campus taking a course BSIT.</p>
+
+                            <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span></span>Drawing</li>
+                                    <li><span></span>Video Editing</li>
+                                    <li><span></span>Picture Editing</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span></span>BuilderWare Work</li>
+                                    <li><span></span>Tupad Government Work</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span></span>Primary</li>
+                                    <p>Malayo Elementary School</p>
+                                    <li><span></span>Secondary</li>
+                                    <P>Infant King Academy</P>
+                                    <li><span></span>College</li>
+                                    <p>Bohol Island State University</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!----Projects-->
+
+        <div id="project">
+            <div class="container">
+                <h1 class="proj-title">Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <h2>React Native Styling - Flexbox</h2>
+                        <P>Design a react native app that demonstrates the proper 
+                            use of react native styling with the application of flexbox layout. </P>
+                            <a href="https://github.com/JamesBuciaIt3A/Activity1FlexBoxReactNative.git">Click here to View My Project</a>
+                            <img src="images/proj1.png">
+                    </div>
+                    <div>
+                        <h2>ScrollView and FlatList</h2>
+                        <P>Create an application that demonstrates scrollview and flatlist. Refer to the design attached:</P>
+                        <a href="https://github.com/JamesBuciaIt3A/ScrollView">Click here to View My Project</a>
+                        <img src="images/proj2.png">
+
+                        
+                    </div>
+                    <div>
+                        <h2>UseState</h2>
+                        <P>Create a react app that demonstrate the application of a useState.</P>
+                        <a href="https://github.com/JamesBuciaIt3A/activity-3">Click here to View My Project</a>
+                        <img src="images/proj3.png">
+                    </div>
+                    <div>
+                        <h2>Asyncstorage</h2>
+                        <P>Perform asyncstorage function for storing and retrieving data. Refer to the figma design for the layout.</P>
+                        <a href="https://github.com/JamesBuciaIt3A/AsyncStorage-Act-7">Click here to View My Project</a>
+                        <img src="images/proj4.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------Contact-------->
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <img src="images/akoni1.png">
+                    </div>
+                    <div class="contact-right">
+                        <h1 class="sub-title1">Contact Info</h1>
+                        <p><img src="images/paper.png">contact@example.com</p>
+                        <p><img src="images/phone.png">09123456789</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><img src="images/fb.png"></a>
+                            <a href="#"><img src="images/twit.png"></a>
+                            <a href="#"><img src="images/ins.png"></a>
+                            <a href="#"><img src="images/link.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Warren. Made By<img src="images/OIP1.png"> Warren BSIT 3A</p>
+            </div>
+        </div>
+
+
+
+    
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+    </body>
+</html>
+</html>
